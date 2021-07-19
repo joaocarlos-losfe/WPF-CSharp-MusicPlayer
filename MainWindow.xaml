@@ -19,7 +19,7 @@
                     <Image Source="Assets/folder.png"/>
                 </Button>
 
-                <Button x:Name="btn_path_music" Width="30" Height="30" Margin="5" Padding="2" Background="Transparent" BorderBrush="Transparent" Click="btn_path_music_Click">
+                <Button x:Name="btn_path_music" Width="30" Height="30" Margin="4" Padding="2" Background="Transparent" BorderBrush="Transparent" Click="btn_path_music_Click">
                     <Image Source="Assets/music.png"/>
                 </Button>
             </StackPanel>
