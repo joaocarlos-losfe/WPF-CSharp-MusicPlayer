@@ -1,0 +1,65 @@
+﻿<Window x:Class="MMP.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MMP"
+        mc:Ignorable="d"
+        Title="MMP 0.0.0.1 alpha" Height="450" Width="800">
+    <Border Padding="10">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition Height="3*"/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+
+            <StackPanel Orientation="Horizontal" Grid.Row="0" VerticalAlignment="Top">
+                <Button Width="30" Height="30" Margin="5" Padding="2" Background="Transparent" BorderBrush="Transparent">
+                    <Image Source="Assets/folder.png"/>
+                </Button>
+
+                <Button x:Name="btn_path_music" Width="30" Height="30" Margin="5" Padding="2" Background="Transparent" BorderBrush="Transparent" Click="btn_path_music_Click">
+                    <Image Source="Assets/music.png"/>
+                </Button>
+            </StackPanel>
+
+            <StackPanel Grid.Row="1">
+                <TextBlock x:Name="lbl_info_music" TextAlignment="Center" TextWrapping="Wrap" Text="select music folder" HorizontalAlignment="Center" FontSize="20"/>
+            </StackPanel>
+
+            <StackPanel Grid.Row="2" Orientation="Vertical" VerticalAlignment="Center" >
+
+                <TextBlock x:Name="lbl_time" Text="null" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+
+                <Slider x:Name="slider_progress" Maximum="100"/>
+
+                <StackPanel  Orientation="Horizontal" HorizontalAlignment="Center">
+                    <Button Width="30" Height="30" Margin="5">
+
+                    </Button>
+
+                    <Button Width="30" Height="30" Margin="5">
+
+                    </Button>
+
+                    <Button Click="btn_play_music_Click" x:Name="btn_play_music" Width="30" Height="30" Margin="5" Padding="5" Background="Transparent" BorderBrush="Transparent">
+                        <Image Source="Assets/play-button.png"/>
+                    </Button>
+
+                    <Button Width="30" Height="30" Margin="5">
+
+                    </Button>
+
+                    <Button Width="30" Height="30" Margin="5">
+
+                    </Button>
+                </StackPanel>
+
+            </StackPanel>
+
+            
+
+        </Grid>
+    </Border>
+</Window>
